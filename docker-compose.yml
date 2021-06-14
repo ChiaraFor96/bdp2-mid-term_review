@@ -6,6 +6,8 @@ services:
   image: chiaraforresi/bdp2-mid-term_review
   ports: 
    - 8888:8888
+  environment:
+   - GEN_CERT=yes
   volumes:
    - $PWD/work:/home/jovyan/work
  
